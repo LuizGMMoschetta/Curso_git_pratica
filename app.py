@@ -60,11 +60,13 @@ def create_answers_section(df):
     return None
 
 def main():
-    df_row = loud_data()
+    df = loud_data()
 
-    create_dataframe_section(df_row)
+    create_dataframe_section(df)
 
-    st.dataframe(df_row)
+    create_answers_section(df)
+
+    st.dataframe(df)
        
 if __name__ == '__main__':
     main()

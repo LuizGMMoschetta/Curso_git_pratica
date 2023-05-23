@@ -38,6 +38,8 @@ def create_dataframe_section(df):
 def main():
     df_row = loud_data()
 
+    create_dataframe_section(df_row)
+
     st.dataframe(df_row)
        
 if __name__ == '__main__':
